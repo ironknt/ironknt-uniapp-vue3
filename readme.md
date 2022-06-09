@@ -2,7 +2,9 @@
 uni-app vue3 基础框架
 
 ### 依赖
-vk-uview-ui：
+1. vk-uview-ui：
   https://vkuviewdoc.fsq.pub/components/intro.html
-animate.css
-pinia
+
+2. animate.css
+
+3. pinia
