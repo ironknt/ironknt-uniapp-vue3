@@ -45,6 +45,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3040720220422002",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3040720220422002",
     "animate.css": "^4.1.1",
+    "flyio": "^0.6.14",
     "pinia": "^2.0.14",
     "vue": "^3.2.33",
     "vue-i18n": "^9.1.9",

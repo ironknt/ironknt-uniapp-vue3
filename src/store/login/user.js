@@ -3,25 +3,24 @@ import { defineStore } from 'pinia';
 export const useUserStore = defineStore('drag', {
   state: () => ({
     userName: '',
-    token: ''
+    token: '',
   }),
+  getters: {
+    userInfo: (state) => {
+      return {
+        name: state.userName,
+        password: '*******',
+      }
+    },
+  },
   actions: {
-    SetData (data) {
+    keepUser (data) {
       this.$patch((state) => {
         Object.assign(state, {
-          ...data
+          userName: data?.user,
+          token: data?.token,
         });
       });
-    },
-    async Login (queryData) {
-      const Data = {
-        userName: queryData.userName,
-        token: '123456'
-      };
-      localStorage.setItem('token', Data.token);
-      localStorage.setItem('username', Data.userName);
-      this.SetData(Data);
-      return Data;
     },
   }
 });
